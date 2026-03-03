@@ -39,55 +39,55 @@ $shadow-light: 0 1px 3px rgba(0,0,0,0.1);
 $shadow-medium: 0 4px 6px rgba(0,0,0,0.1); // Great for "Add to Cart" hover states
 
 // Bootstrap grid
-$grid-columns: 12;
-$gutter-width: 1.5rem; // 24px
-$container-max-width: 1200px;
+// $grid-columns: 12;
+// $gutter-width: 1.5rem; // 24px
+// $container-max-width: 1200px;
 
-$breakpoints: (
-  "sm": 576px,
-  "md": 768px,
-  "lg": 992px,
-  "xl": 1200px
-);
+// $breakpoints: (
+//   "sm": 576px,
+//   "md": 768px,
+//   "lg": 992px,
+//   "xl": 1200px
+// );
 
-.container {
-  width: 100%;
-  max-width: $container-max-width;
-  margin: 0 auto;
-  padding: 0 ($gutter-width / 2);
-}
+// .container {
+//   width: 100%;
+//   max-width: $container-max-width;
+//   margin: 0 auto;
+//   padding: 0 ($gutter-width / 2);
+// }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 ($gutter-width / -2); // Offsets the column padding
-}
+// .row {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 0 ($gutter-width / -2); // Offsets the column padding
+// }
 
-// Base Column Styles
-[class^="col-"] {
-  width: 100%;
-  padding: 0 ($gutter-width / 2);
-}
+// // Base Column Styles
+// [class^="col-"] {
+//   width: 100%;
+//   padding: 0 ($gutter-width / 2);
+// }
 
-// Generate Mobile-First Columns
-@for $i from 1 through $grid-columns {
-  .col-#{$i} {
-    flex: 0 0 auto;
-    width: percentage($i / $grid-columns);
-  }
-}
+// // Generate Mobile-First Columns
+// @for $i from 1 through $grid-columns {
+//   .col-#{$i} {
+//     flex: 0 0 auto;
+//     width: percentage($i / $grid-columns);
+//   }
+// }
 
-// Generate Responsive Columns (sm, md, lg, xl)
-@each $name, $width in $breakpoints {
-  @media (min-width: $width) {
-    @for $i from 1 through $grid-columns {
-      .col-#{$name}-#{$i} {
-        flex: 0 0 auto;
-        width: percentage($i / $grid-columns);
-      }
-    }
-  }
-}
+// // Generate Responsive Columns (sm, md, lg, xl)
+// @each $name, $width in $breakpoints {
+//   @media (min-width: $width) {
+//     @for $i from 1 through $grid-columns {
+//       .col-#{$name}-#{$i} {
+//         flex: 0 0 auto;
+//         width: percentage($i / $grid-columns);
+//       }
+//     }
+//   }
+// }
 
 // <div className="container">
 //   <div className="row">
