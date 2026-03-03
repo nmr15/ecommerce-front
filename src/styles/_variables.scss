@@ -1,0 +1,101 @@
+// Brand Palette
+$color-primary: #2563eb;
+$color-secondary: #f9fafb;
+$color-accent: #f59e0b;
+
+// Text & UI
+$color-text-main: #1f2937;
+$color-text-muted: #6b7280;
+$color-error: #ef4444;
+
+// Typography
+// $font-main: 'Inter', sans-serif;
+// $font-heading: 'Poppins', sans-serif;
+
+$text-xs: 0.75rem; // 12px
+$text-sm: 0.875rem; // 14px
+$text-base: 1rem;   // 16px
+$text-lg: 1.125rem; // 18px
+$text-xl: 1.25rem;  // 20px
+$text-2xl: 1.5rem;  // 24px
+
+// Layout & Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+$container-max-width: 1200px;
+
+// Component "Feel" (Border Radius & Shadows)
+// Border Radius
+$radius-sm: 4px;
+$radius-md: 8px;   // Standard for product cards
+$radius-full: 999px; // For pill-shaped buttons
+
+// Elevation (Shadows)
+$shadow-light: 0 1px 3px rgba(0,0,0,0.1);
+$shadow-medium: 0 4px 6px rgba(0,0,0,0.1); // Great for "Add to Cart" hover states
+
+// Bootstrap grid
+$grid-columns: 12;
+$gutter-width: 1.5rem; // 24px
+$container-max-width: 1200px;
+
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px
+);
+
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 ($gutter-width / 2);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 ($gutter-width / -2); // Offsets the column padding
+}
+
+// Base Column Styles
+[class^="col-"] {
+  width: 100%;
+  padding: 0 ($gutter-width / 2);
+}
+
+// Generate Mobile-First Columns
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    flex: 0 0 auto;
+    width: percentage($i / $grid-columns);
+  }
+}
+
+// Generate Responsive Columns (sm, md, lg, xl)
+@each $name, $width in $breakpoints {
+  @media (min-width: $width) {
+    @for $i from 1 through $grid-columns {
+      .col-#{$name}-#{$i} {
+        flex: 0 0 auto;
+        width: percentage($i / $grid-columns);
+      }
+    }
+  }
+}
+
+// <div className="container">
+//   <div className="row">
+//     {products.map(product => (
+//       <div key={product.id} className="col-12 col-md-6 col-lg-3">
+//         {/* This will show 1 per row on mobile, 2 on tablet, 4 on desktop */}
+//         <ProductCard product={product} />
+//       </div>
+//     ))}
+//   </div>
+// </div>
