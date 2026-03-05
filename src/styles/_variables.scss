@@ -1,7 +1,21 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Inter:wght@400;500;600&display=swap');
+
+$font-heading: 'Sora', sans-serif;
+$font-body: 'Inter', sans-serif;
+
+// Gaming Color Palette
+$color-bg: #0b0e14;          // Deep Dark Gray/Black
+$color-surface: #161b22;     // Card background
+$color-primary: #5865F2;     // "Discord" Blue or Electric Purple
+$color-accent: #00ff88;      // Neon Green for "Buy" buttons/prices
+$color-text-main: #ffffff;
+$color-text-muted: #9ca3af;
+
 // Brand Palette
-$color-primary: #2563eb;
-$color-secondary: #f9fafb;
-$color-accent: #f59e0b;
+// $color-primary: #2563eb;
+// $color-secondary: #f9fafb;
+// $color-accent: #f59e0b;
 
 // Text & UI
 $color-text-main: #1f2937;
@@ -98,4 +112,5 @@ $shadow-medium: 0 4px 6px rgba(0,0,0,0.1); // Great for "Add to Cart" hover stat
 //       </div>
 //     ))}
 //   </div>
+
 // </div>
