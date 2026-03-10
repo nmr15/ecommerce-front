@@ -4,27 +4,15 @@
 $font-heading: 'Sora', sans-serif;
 $font-body: 'Inter', sans-serif;
 
-// Gaming Color Palette
-$color-bg: #0b0e14;          // Deep Dark Gray/Black
-$color-surface: #161b22;     // Card background
-$color-primary: #5865F2;     // "Discord" Blue or Electric Purple
-$color-accent: #00ff88;      // Neon Green for "Buy" buttons/prices
-$color-text-main: #ffffff;
-$color-text-muted: #9ca3af;
-
 // Brand Palette
-// $color-primary: #2563eb;
-// $color-secondary: #f9fafb;
-// $color-accent: #f59e0b;
+$color-primary: #2563eb;
+$color-secondary: #f9fafb;
+$color-accent: #f59e0b;
 
 // Text & UI
 $color-text-main: #1f2937;
 $color-text-muted: #6b7280;
 $color-error: #ef4444;
-
-// Typography
-// $font-main: 'Inter', sans-serif;
-// $font-heading: 'Poppins', sans-serif;
 
 $text-xs: 0.75rem; // 12px
 $text-sm: 0.875rem; // 14px
@@ -33,7 +21,13 @@ $text-lg: 1.125rem; // 18px
 $text-xl: 1.25rem;  // 20px
 $text-2xl: 1.5rem;  // 24px
 
+$weight-regular: 400;
+$weight-semibold: 600;
+$weight-bold: 800;
+
 // Layout & Spacing
+$spacing-10px: 0.625rem;
+$spacing-20px: 1.25rem;
 $spacing-xs: 4px;
 $spacing-sm: 8px;
 $spacing-md: 16px;

@@ -1,0 +1,16 @@
+@use '../../styles/variables' as var;
+
+.header
+{
+  background-color: var.$color-primary;
+}
+
+.navbar
+{
+  display: flex;
+
+  &-links
+  {
+    display: flex;
+  }
+}

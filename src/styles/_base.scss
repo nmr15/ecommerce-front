@@ -1,5 +1,12 @@
 @use 'variables' as var;
 
+// Breakpoints
+// Extra Small: < 576px (Phones)
+// Small: > 576px (Portrait Tablets)
+// Medium: > 768px (Landscape Tablets)
+// Large: > 992px (Laptops)
+// Extra Large/XXL: > 1200px/1400px (Desktops)
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -33,3 +40,12 @@ a {
   color: inherit;
 }
 
+p, a, li
+{
+  font-family: var.$font-body;
+}
+
+h1, h2, h3, h4, h5
+{
+  font-family: var.$font-heading;
+}
