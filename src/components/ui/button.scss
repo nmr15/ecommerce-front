@@ -4,6 +4,7 @@
   border: none;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 12px;
   transition: all 0.3s;
 }
 
@@ -15,4 +16,10 @@
 .btn-ellipse
 {
   border-radius: 20px;
+}
+
+.btn-lg
+{
+  padding: 14px 39px;
+  font-size: 14px;
 }
