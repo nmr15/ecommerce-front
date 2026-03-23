@@ -1,11 +1,11 @@
-import './button.scss'
+import "./button.scss";
 
-const Button = () => {
+const Button = ({ variant }) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <button className={`btn btn-${variant}`}>Button</button>
+    </>
+  );
+};
 
-export default Button
+export default Button;
