@@ -9,9 +9,12 @@ function App()
   return (
     <>
       <Navbar />
+      <main>
       <Routes>
         <Route path='/' element={<Home />} />
+        
       </Routes>
+      </main>
       <Footer />
     </>
   )
