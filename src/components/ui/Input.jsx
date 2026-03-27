@@ -1,10 +1,10 @@
-import React from 'react'
+import './input.scss'
 
-const Input = ({ type, name, value, onChange, for, label }) => 
+const Input = ({ type, name, value, onChange, labelFor, label }) => 
 {
   return (
     <>
-      <label htmlFor={for}>{label}</label>
+      <label htmlFor={labelFor}>{label}</label>
       <input 
         type={type}
         name={name}
