@@ -1,4 +1,5 @@
 import { Button } from '../importComponents'
+import './productcardhome.scss'
 import ps5Spiderman2 from '../../assets/ps5/ps5Spiderman2.jpg'
 
 const ProductCardHome = () => 

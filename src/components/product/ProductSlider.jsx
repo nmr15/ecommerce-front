@@ -1,10 +1,18 @@
-import React from 'react'
+import { ProductCardHome } from '../importComponents'
 
-const ProductSlider = () => {
+const ProductSlider = () =>
+{
   return (
-    <div>
-      
-    </div>
+    <>
+      <div className="container">
+      <div className="grid-4">
+        <ProductCardHome />
+        <ProductCardHome />
+        <ProductCardHome />
+        <ProductCardHome />
+      </div>
+      </div>
+    </>
   )
 }
 

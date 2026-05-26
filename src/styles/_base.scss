@@ -49,3 +49,21 @@ h1, h2, h3, h4, h5
 {
   font-family: var.$font-heading;
 }
+
+.grid-4
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-3
+{
+  flex: 0 0 auto;
+  width: 25%;
+}

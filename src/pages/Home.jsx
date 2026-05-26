@@ -1,11 +1,12 @@
-import { Button, Input, ProductCardHome } from '../components/importComponents'
+import { Button, Input, ProductCardHome, ProductSlider } from '../components/importComponents'
+import Register from './Register'
 
 const Home = () => 
 {
   return (
     <>
       <h1>Home</h1>
-      <ProductCardHome />
+      <Register />
     </>
   )
 }
